@@ -1,12 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> tierra del mejor cafe </title>
+    <style>
+        /* Estilos Generales y Reseteo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #FDFBF7; /* Fondo crema suave */
+            color: #000000; /* Texto marrón oscuro */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff3c00; /* Marrón café */
+            color: #3E2723;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Sección de Bienvenida */
+        .bienvenida {
+            max-width: 800px;
+            margin: 3rem auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        .bienvenida h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1a0904;
+        }
+
+        .bienvenida p {
+            font-size: 1.1rem;
+            color: #000000;
+        }
+
+        /* Sección de Productos */
+        .productos-section {
+            max-width: 1000px;
+            margin: 0 auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .productos-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #5d4037;
+        }
+
+        /* Contenedor Flexbox para los 3 productos */
+        .contenedor-productos {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Para que se adapte a pantallas de celular */
+        }
+
+        /* Tarjeta de cada Producto */
+        .producto-card {
+            background-color: #ffffff;
+            flex: 1;
+            min-width: 250px; /* Evita que se encojan de más */
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #8d6e63; /* Detalle de color arriba */
+        }
+
+        .producto-card h3 {
+            margin-bottom: 0.5rem;
+            color: #4e342e;
+        }
+
+        .producto-card .precio {
+            font-weight: bold;
+            color: #f54708;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff3c00; /* Marrón más oscuro */
+            color: #000000;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+        }
+    </style> <!-- aca termina ccs -->
 </head>
-<body>
-    <h1>Boca Juniors
-    </h1>
+<body><!-- EMPIEZA ACA EL BODY -->
+
+    <!-- Header con título -->
+    <header>
+        <h1>Tierra del Mejor Cafe</h1>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section class="bienvenida">
+        <h2>Bienvenidos a nuestro rincón</h2>
+        <p>El lugar perfecto para pausar el día, disfrutar de un grano seleccionado y acompañarlo con la mejor pastelería artesanal. Hecho por apasionados del café, para amantes del buen café.</p>
+    </section>
+
+    <!-- Sección con 3 productos -->
+    <section class="productos-section"> <!-- Secciones -->
+        <h2>Nuestros Favoritos</h2>
+        
+        <div class="contenedor-productos">
+            
+            <div class="producto-card">
+                <h3>Espresso Intenso</h3>
+                <p>Una carga pura de energía. Extracto concentrado de granos seleccionados con un toque perfecto de crema avellanada.</p>
+                <p class="precio">$2.50</p>
+            </div> <!-- Producto puro de energia -->
+
+            <div class="producto-card">
+                <h3>Capuccino Tradicional</h3>
+                <p>El equilibrio ideal: una base de espresso, leche vaporizada texturizada y una capa densa de espuma con cacao.</p>
+                <p class="precio">$3.50</p>
+            </div> <!-- producto equilibrio ideal  -->
+
+            <div class="producto-card">
+                <h3>Medialuna de Manteca</h3>
+                <p>Nuestra especialidad horneada cada mañana. Crujiente por fuera, esponjosa por dentro y con almíbar artesanal.</p>
+                <p class="precio">$1.80</p>
+            </div> <!-- productos medialuna -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer> <!-- footer -->
+        <p>&copy; 2026 Café Aroma Inicial. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
